@@ -28,18 +28,10 @@ This user-friendly interface allows individuals to input their medical details a
 # Multiple Disease Prediction System
 This project is a web-based application built using Streamlit and FastAPI, integrating machine learning models for predicting Diabetes, Heart Disease, and Parkinson’s Disease.
 
-## Webpage Screenshots
-
-### [Diabetes Prediction](https://github.com/danthulurisaihemanth/multiple-disease-prediction-streamlit-app/blob/main/Webpage%20Screenshots/diabetes_page.png)
-
-### [Heart Disease Prediction](https://github.com/danthulurisaihemanth/multiple-disease-prediction-streamlit-app/blob/main/Webpage%20Screenshots/heart_disease_page.png)
-
-### [Parkinson’s Disease Prediction](https://github.com/danthulurisaihemanth/multiple-disease-prediction-streamlit-app/blob/main/Webpage%20Screenshots/parkinsons_page.png)
-
 ## How to Run the Project  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/danthulurisaihemanth/multiple-disease-prediction-streamlit-app.git
+   git clone https://github.com/VenkateshGollapudi/heartdiseaseprediction
    ```
 
 2. Install dependencies:  
@@ -64,6 +56,3 @@ This project is a web-based application built using Streamlit and FastAPI, integ
 - `Webpage Screenshots/`: Screenshots of each disease prediction webpage.
 - `requirements.txt`: List of dependencies required to run the project.
 
-## Author  
-**D. Sai Hemanth Varma**  
-- [LinkedIn Profile](https://www.linkedin.com/in/danthuluri-saihemanth-2332a1252/)
