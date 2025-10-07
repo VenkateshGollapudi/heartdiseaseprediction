@@ -11,16 +11,16 @@ st.set_page_config(page_title="Health Assistant 🏥",
 # Getting the working directory of the main.py
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Update the paths to the correct location (FIXED: using raw strings)
-diabetes_model = pickle.load(open(r'C:\Users\HP\Desktop\multiple-disease-prediction-streamlit-app\Saved_Models\diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open(r'C:\Users\HP\Desktop\multiple-disease-prediction-streamlit-app\Saved_Models\heart_disease_model.sav', 'rb'))
-parkinsons_model = pickle.load(open(r'C:\Users\HP\Desktop\multiple-disease-prediction-streamlit-app\Saved_Models\parkinsons_model.sav', 'rb'))
+# FIXED: Use relative paths with os.path.join for cross-platform compatibility
+diabetes_model = pickle.load(open(os.path.join(working_dir, 'Saved_Models', 'diabetes_model.sav'), 'rb'))
+heart_disease_model = pickle.load(open(os.path.join(working_dir, 'Saved_Models', 'heart_disease_model.sav'), 'rb'))
+parkinsons_model = pickle.load(open(os.path.join(working_dir, 'Saved_Models', 'parkinsons_model.sav'), 'rb'))
 
 # Sidebar for navigation
 with st.sidebar:
     selected = option_menu('Multiple Disease Prediction System 🏥',
 
-                           ['Diabetes Prediction 🍩',  # FIXED: corrected menu item name
+                           ['Diabetes Prediction 🍩',
                             'Heart Disease Prediction ❤️',
                             "Parkinson's Prediction 🧠"],
                            menu_icon='hospital-fill',
